@@ -1,33 +1,30 @@
-var firstchord = 0;
-var secondchord = 0;
-var thirdchord = 0;
-var fourthchord = 0;
-
-let cChords = ["Cmaj", "dmin", "emin", "Fmaj", "Gmaj","amin","Bbmaj"]
-let gChords = ["Gmaj", "amin", "bmin", "CMaj","Dmaj","emin","Fmaj"]
-let dChords = ["Dmaj", "emin", "f#min", "Gmaj", "Amaj", "bmin", "Cmaj"]
+var cChords = ["Cmaj", "dmin", "emin", "Fmaj", "Gmaj","amin","Bbmaj"]
+var gChords = ["Gmaj", "amin", "bmin", "CMaj","Dmaj","emin","Fmaj"]
+var dChords = ["Dmaj", "emin", "f#min", "Gmaj", "Amaj", "bmin", "Cmaj"]
 
 function buttonClick() {
 
-if(document.getElementById("keyofC").checked){
-	firstchord = cChords[Math.floor(Math.random() * 7)];
-	secondchord = cChords[Math.floor(Math.random() * 7)];
-	thirdchord = cChords[Math.floor(Math.random() * 7)]
-	fourthchord = cChords[Math.floor(Math.random() * 7)];	
-}else if(document.getElementById("keyofG").checked){
-	firstchord = gChords[Math.floor(Math.random() * 7)];
-	secondchord = gChords[Math.floor(Math.random() * 7)];
-	thirdchord = gChords[Math.floor(Math.random() * 7)]
-	fourthchord = gChords[Math.floor(Math.random() * 7)];	
-}else if(document.getElementById("keyofD").checked){
-	firstchord = dChords[Math.floor(Math.random() * 7)];
-	secondchord = dChords[Math.floor(Math.random() * 7)];
-	thirdchord = dChords[Math.floor(Math.random() * 7)]
-	fourthchord = dChords[Math.floor(Math.random() * 7)];	
-}		
+var firstChord = Math.floor(Math.random() * 7);
+var secondChord = Math.floor(Math.random() * 7);
+var thirdChord = Math.floor(Math.random() * 7);
+var fourthChord = Math.floor(Math.random() * 7);
 
-	document.getElementById('firstchord').innerHTML = firstchord;
-	document.getElementById('secondchord').innerHTML = secondchord;
-	document.getElementById('thirdchord').innerHTML = thirdchord;
-	document.getElementById('fourthchord').innerHTML = fourthchord;			
+if(document.getElementById("keyofC").checked){
+	document.getElementById('firstchord').innerHTML = cChords[firstChord];
+	document.getElementById('secondchord').innerHTML = cChords[secondChord];
+	document.getElementById('thirdchord').innerHTML = cChords[thirdChord];
+	document.getElementById('fourthchord').innerHTML = cChords[fourthChord];
+}else if(document.getElementById("keyofG").checked){
+	document.getElementById('firstchord').innerHTML = gChords[firstChord];
+	document.getElementById('secondchord').innerHTML = gChords[secondChord];
+	document.getElementById('thirdchord').innerHTML = gChords[thirdChord];
+	document.getElementById('fourthchord').innerHTML = gChords[fourthChord];
+}else if(document.getElementById("keyofD").checked){
+	document.getElementById('firstchord').innerHTML = dChords[firstChord];
+	document.getElementById('secondchord').innerHTML = dChords[secondChord];
+	document.getElementById('thirdchord').innerHTML = dChords[thirdChord];
+	document.getElementById('fourthchord').innerHTML = dChords[fourthChord];
+}
+
+
 }
