@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="script.js"></script>
+<h1>Chord Generator</h1>
+<h2>Key</h2>
+<input type="radio" id="keyofC" name="keys" value="keyofC">
+	<label for="keyofC">C Major</label><br>
+<input type="radio" id="keyofG" name="keys" value="keyofG">
+	<label for="keyofG">G Major</label><br>
+<input type="radio" id="keyofD" name="keys" value="keyofD">
+	<label for="keyofD">D Major</label><br>
+<br>
+<button onclick="buttonClick();">Generate</button>
+<br>
+<div class="chordcontainer">
+	<div id="firstchord" class="chord"></div>
+	<div id="secondchord" class="chord"></div>
+	<div id="thirdchord" class="chord"></div>
+	<div id="fourthchord" class="chord"></div>
+</div>
+</body>
+</html>

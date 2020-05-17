@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+	text-align: center;
+	font-family: Montserrat, sans-serif;
+}
+
+.chordcontainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 50px auto;
+}
+
+.chord {
+	border: 5px solid #000;
+	padding: 20px 10px 20px 10px;
+	margin: 0px 5px 0px 5px;
+	width: 5em;
+}
